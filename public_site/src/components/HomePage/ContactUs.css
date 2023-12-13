@@ -1,0 +1,58 @@
+/* ContactUs.css */
+
+.contact-us-container {
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background-color: #03B7AE; /* Specified background color */
+    color: white; /* White text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    text-align: center;
+    margin: 0; /* Reset any default margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.contact-address {
+    padding-left: 120px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+
+.map-container {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    color: black;
+    background-color: white; /* Use your theme color */
+    width: 50%; /* Full width button */
+    padding: 10px 20px; /* Padding for larger button */
+    font-size: 1.2rem; /* Larger font size */
+    margin: 10px;
+    border: none;
+}
+
+.btn-primary:hover {
+    color: #03B7AE;
+    background-color: #000707; /* Use your theme color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-address, .map-container, .btn-primary {
+        margin: 10px 0; /* More margin on smaller screens */
+    }
+}
+
+
+
+

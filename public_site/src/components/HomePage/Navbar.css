@@ -1,10 +1,9 @@
 /* Navbar.css */
 
  .navbar-custom {
-    background-color: #03B7AE;;
+    background-color: rgb(239, 239, 239);
     border-bottom: 2px solid #fff;
 }
-
 
 
 .nav-link-custom {
@@ -13,7 +12,7 @@
 }
 
 .nav-link-custom:hover {
-    color: white;
+    color: #03B7AE;
 }
 
 .navbar-brand-custom {

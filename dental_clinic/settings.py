@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "public_app",
     "admin_app",
-    "core_app",
     "corsheaders",
     "rest_framework",
     "rest_framework_simplejwt",

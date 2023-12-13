@@ -1,11 +1,13 @@
 /* Jumbotron.css */
 
 .jumbotron {
-    background-color: rgba(248, 249, 250, 0.8); /* Light background color */
-    padding: 40px 0; /* Vertical padding with no horizontal padding */
+    margin-left: 300px;
+    width: 80%;
+    background-color: #03B7AE; 
+    padding: 60px 0; /* Vertical padding with no horizontal padding */
     margin-top: 20px; /* Space above the jumbotron */
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron .container {
@@ -14,14 +16,14 @@
 }
 
 .jumbotron h3 {
-    color: #3c3e3f; /* Custom color for the header */
+    color: rgb(214, 213, 213); /* Custom color for the header */
     font-weight: bold; /* Bold font for the header */
     margin-bottom: 20px;
     margin-top: 20px;/* Space below the header */
 }
 
-.jumbotron p {
-    color: #333; /* Darker text color for the paragraph */
+.jumbotron h5 {
+    color: rgb(41, 41, 41); /* Darker text color for the paragraph */
     font-size: 1.1rem; /* Slightly larger font size */
     line-height: 1.6; /* Improved line spacing for readability */
 }

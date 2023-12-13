@@ -5,6 +5,25 @@
     margin-top: 20px;
 }
 
+.full-page-section {
+    min-height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+}
+
+.full-page-section-2{
+    background-color: #e9eef2;
+    min-height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .homepage-background {
     background-image: url('/home/innosource5/Desktop/DentalClinic/dental_clinic/frontend/public/images/cool_dentist.jpg');
     background-size: cover;
@@ -68,3 +87,7 @@
     }
   }
   
+
+  .fa-picture-o {
+    height: 600px;
+  }
