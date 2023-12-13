@@ -1,0 +1,70 @@
+/* HomePage.css */
+
+.homepage-container {
+    padding: 20px 0; 
+    margin-top: 20px;
+}
+
+.homepage-background {
+    background-image: url('/home/innosource5/Desktop/DentalClinic/dental_clinic/frontend/public/images/cool_dentist.jpg');
+    background-size: cover;
+    background-position: center bottom 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Makes the background fixed during scroll */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; /* Prevents horizontal scroll if the content is wider than the screen */
+  }
+
+
+
+.homepage-row-left-align {
+    justify-content: flex-start; 
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .jumbotron-icon {
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+      /* Other styles for your icon */
+  }
+  
+
+  .icon-fullwidth-container {
+    position: fixed; /* Fixed position to stay in place during scrolling */
+    left: 0;
+    top: 40px; /* Start at the top of the page */
+    bottom: 0; /* Stretch to the bottom of the page */
+    width: 260px; /* Or the width you prefer */
+    height: 90vh; /* 100% of the viewport height */
+    display: flex;
+    align-items: top; /* Aligns children to the middle of the container */
+    justify-content: center; /* Center horizontally in the container */
+    overflow: hidden; /* Prevents the icon from being visible outside this container */
+    z-index: 5; 
+  }
+  
+  .icon-fullwidth {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the icon fits in the container */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%); /* Start just off-screen to the left */
+    }
+    100% {
+      transform: translateX(0); /* End at the left edge of the screen */
+    }
+  }
+  

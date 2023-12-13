@@ -1,0 +1,41 @@
+/* ServiceCard.css */
+
+.card-custom {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow size on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border: none;
+    background-color: rgba(248, 249, 250, 0.6);
+}
+
+.card-custom:hover {
+    transform: translateY(-10px); /* Slightly raise the card on hover */
+    box-shadow: 0 6px 10px #03B7AE;  /* Adds a subtle shadow to the card */
+}
+
+.card-body-custom {
+    width: 380px;
+    height: 260px;
+    padding: 1.25rem; 
+    background-color: rgba(248, 249, 250, 0.6);
+}
+
+
+.card-title-custom {
+    color: #333; /* Dark color for the title */
+    font-size: 1.25rem; /* Slightly larger font size for the title */
+}
+
+.card-text-custom {
+    color: #555; /* Dark grey color for the text */
+    font-size: 1rem; /* Standard font size for the text */
+}
+
+.btn-custom {
+    background-color: #525559; /* Custom color for the button */
+    color: white; /* White text for the button */
+}
+
+.btn-custom:hover {
+    background-color: #03B7AE; /* Darker shade on hover for the button */
+    color: white;
+}

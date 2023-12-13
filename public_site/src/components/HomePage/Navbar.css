@@ -1,0 +1,26 @@
+/* Navbar.css */
+
+ .navbar-custom {
+    background-color: #03B7AE;;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.nav-link-custom {
+    color: black;
+    margin-right: 22px; 
+}
+
+.nav-link-custom:hover {
+    color: white;
+}
+
+.navbar-brand-custom {
+    color: black; 
+    font-weight: bold; 
+}
+
+.navbar-brand-custom:hover {
+    color: white; 
+}

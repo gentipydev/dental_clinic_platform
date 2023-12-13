@@ -1,0 +1,101 @@
+
+ .info-card {
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside the card */
+    margin-bottom: 10px; /* Space below the card */
+    text-align: center; /* Centered text */
+  }
+  
+  /* You can also style the h1 and p specifically inside the card */
+  .info-card h2 {
+    color: #03B7AE; /* Deep blue */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  .info-card p {
+    color: #333; /* Dark grey */
+    line-height: 1.6;
+  }
+  
+  
+  p {
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Services section */
+  h2 {
+    color: #4a4e69; /* Dark slate */
+    margin-top: 30px;
+  }
+  
+  /* Individual service card styling */
+  .service-card {
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color:  #03B7AE; /* Deep red */
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+  }
+  
+  li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #5f0f40; /* Dark purple */
+  }
+ 
+  /* Note styling */
+  .note {
+    font-style: italic;
+    color: #5f0f40; /* Navy blue */
+    border-top: 1px solid #ccc; /* Light grey line */
+    padding-top: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto; /* 2 rows */
+    width: 80%;
+    padding: 40px;
+    grid-gap: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .grid-item {
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children to the start of the flex container */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+ 
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+  }
+  
+
+  

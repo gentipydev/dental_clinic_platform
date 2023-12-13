@@ -1,0 +1,6 @@
+# Ignore database directories
+data/db/
+
+# Ignore local environment files
+*.cnf
+
