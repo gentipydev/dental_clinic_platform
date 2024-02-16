@@ -1,0 +1,59 @@
+.staff-container {
+    /* Your styling for the staff section */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Updated from top */
+    align-items: flex-start; /* Updated from left, assuming you want alignment to the start */
+    background-color: #fff; /* Example background color */
+}
+
+.staff-member {
+    display: flex;
+    align-items: flex-start; /* Updated from start */
+    margin-top: 80px;
+    margin-bottom: 20px; /* Space between staff members */
+    /* Removed the animation from here */
+}
+
+/* This class is added dynamically when the component is visible */
+.staff-member.slide-in {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.staff-image {
+    width: 400px; /* Adjust as needed */
+    height: auto;
+    margin-left: 300px; /* Space between image and text */
+}
+
+.staff-description {
+    padding-left: 80px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.staff-description p:after {
+    content: '';
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

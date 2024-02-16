@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,12 +11,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-2*5^0tsvg4s4!q+5yk!e1w-mcy47!f(!gldre!)pirw%1*mx07"
+SECRET_KEY = config('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -26,8 +28,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "public_app",
-    "admin_app",
     "corsheaders",
     "rest_framework",
     "rest_framework_simplejwt",
@@ -70,12 +70,12 @@ WSGI_APPLICATION = "dental_clinic.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dental_clinic_db',
-        'USER': 'dental_clinic_user',
-        'PASSWORD': 'Gentifit2024',
-        'HOST': 'db',  
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('POSTGRES_DB', default='dental_clinic_db'),
+        'USER': config('POSTGRES_USER', default='dental_clinic_user'),
+        'PASSWORD': config('POSTGRES_PASSWORD', default=''),
+        'HOST': config('DB_HOST', default='db'),  
+        'PORT': config('DB_PORT', default='5432'),
     }
 }
 
@@ -152,7 +152,6 @@ SIMPLE_JWT = {
 }
 
 
-AUTH_USER_MODEL = 'admin_app.MyUser'
 
 REDIS_HOST = 'redis'
 REDIS_PORT = 6379

@@ -3,8 +3,10 @@ import Navbar from './Navbar.js';
 import Jumbotron from './Jumbotron.js';
 import ServiceCard from './ServiceCard.js';
 import ContactUs from './ContactUs.js';
+import Staff from './Staff.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HomePage.css';
+
 
 const HomePage = () => {
     return (
@@ -14,7 +16,7 @@ const HomePage = () => {
             <div className="full-page-section">
                 <Jumbotron />
                 <div className="icon-fullwidth-container">
-                    <img src="/images/dentist_icon.png" alt="Dentist Icon" className="icon-fullwidth" />
+                    <img src="/images/loka_icon.png" alt="Dentist Icon" className="icon-fullwidth" />
                 </div>
             </div>
 
@@ -30,6 +32,11 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="full-page-section">
+                <Staff /> 
+            </div>
+
 
             <div className="full-page-section">
                 <ContactUs />

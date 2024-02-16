@@ -11,6 +11,9 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
+# Install PostgreSQL client
+RUN apt-get update && apt-get install -y postgresql-client
+
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 

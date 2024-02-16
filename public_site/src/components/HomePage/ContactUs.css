@@ -5,14 +5,14 @@
     width: 100%; /* Full viewport width */
     background-color: #03B7AE; /* Specified background color */
     color: white; /* White text */
-    padding: 20px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: top;
     text-align: center;
     margin: 0; /* Reset any default margin */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 
@@ -23,13 +23,7 @@
     padding-bottom: 30px;
 }
 
-.map-container {
-    width: 300px;
-    height: 200px;
-    padding-bottom: 10px;
-    margin: 10px;
-    border-radius: 10px;
-}
+
 
 .btn-primary {
     color: black;
@@ -54,5 +48,11 @@
 }
 
 
+
+.card-img-top {
+    width: 100%; /* make the image take full width of its container */
+    height: 600px; /* fixed height for all images */
+    object-fit: cover; /* this will cover the area without distorting the image */
+}
 
 

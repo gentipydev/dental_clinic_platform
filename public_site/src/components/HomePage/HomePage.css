@@ -25,7 +25,6 @@
 
 
 .homepage-background {
-    background-image: url('/home/innosource5/Desktop/DentalClinic/dental_clinic/frontend/public/images/cool_dentist.jpg');
     background-size: cover;
     background-position: center bottom 20%;
     background-repeat: no-repeat;
@@ -60,10 +59,10 @@
   .icon-fullwidth-container {
     position: fixed; /* Fixed position to stay in place during scrolling */
     left: 0;
-    top: 40px; /* Start at the top of the page */
+    top: 80px; /* Start at the top of the page */
     bottom: 0; /* Stretch to the bottom of the page */
-    width: 260px; /* Or the width you prefer */
-    height: 90vh; /* 100% of the viewport height */
+    width: 200px; /* Or the width you prefer */
+    height: 20vh; /* 100% of the viewport height */
     display: flex;
     align-items: top; /* Aligns children to the middle of the container */
     justify-content: center; /* Center horizontally in the container */
