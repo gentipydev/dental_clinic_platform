@@ -4,7 +4,7 @@ import './Staff.css';
 const Staff = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [typedText, setTypedText] = useState('');
-    const fullText = "Il dottor Loka, laureato in Odontoiatria a Tirana nel 2021, si è specializzato in chirurgia dentale in Italia.\nHa maturato esperienza nella sua clinica, con focus su chirurgia implantare e orale ricostruttiva.\n\nEsperto in tecnologie avanzate e tecniche minimamente invasive.\nIl dottor Loka partecipa regolarmente a corsi e congressi nel settore.\nLa sua filosofia è l'approccio olistico, offrendo trattamenti personalizzati per la salute orale.";
+    const fullText = "IIl dottor Loka, laureato in Odontoiatria a Tirana nel 2021, si è specializzato in chirurgia dentale in Italia.\nHa maturato esperienza nella sua clinica, con focus su chirurgia implantare e orale ricostruttiva.\n\nEsperto in tecnologie avanzate e tecniche minimamente invasive.\nIl dottor Loka partecipa regolarmente a corsi e congressi nel settore.\nLa sua filosofia è l'approccio olistico, offrendo trattamenti personalizzati per la salute orale";
     const ref = useRef();
 
     useEffect(() => {
