@@ -11,27 +11,32 @@ const Staff = () => {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 setIsVisible(true);
-
+    
                 // Start typing effect when the staff member is in view
-                let index = 0;
+                let index = 0; // Initialize index to 0 to start from the first character
                 const timer = setInterval(() => {
                     setTypedText((prev) => prev + fullText[index]);
-                    index++;
-                    if (index === fullText.length) clearInterval(timer);
+                    if (index < fullText.length - 1) {
+                        index++;
+                    } else {
+                        clearInterval(timer); // Clear interval when the end of text is reached
+                    }
                 }, 20); // Adjust the speed by changing the interval
-
+    
                 observer.disconnect();
             }
         });
-
+    
         observer.observe(ref.current);
-
+    
         return () => {
             if (ref.current) {
                 observer.unobserve(ref.current);
             }
+            clearInterval(timer); // Also clear the interval when the component unmounts
         };
     }, [fullText]);
+    
 
     return (
         <div className="staff-container" ref={ref}>
