@@ -8,13 +8,14 @@ const Staff = () => {
     const ref = useRef();
 
     useEffect(() => {
+        let timer; // Define timer in the outer scope of useEffect to make it accessible in the cleanup function
+    
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 setIsVisible(true);
     
-                // Start typing effect when the staff member is in view
                 let index = 0; // Initialize index to 0 to start from the first character
-                const timer = setInterval(() => {
+                timer = setInterval(() => { // Assign setInterval to timer here
                     setTypedText((prev) => prev + fullText[index]);
                     if (index < fullText.length - 1) {
                         index++;
@@ -33,9 +34,10 @@ const Staff = () => {
             if (ref.current) {
                 observer.unobserve(ref.current);
             }
-            clearInterval(timer); // Also clear the interval when the component unmounts
+            if (timer) clearInterval(timer); // Clear the interval when the component unmounts
         };
     }, [fullText]);
+    
     
 
     return (
