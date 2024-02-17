@@ -38,6 +38,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      - ./admin_react_app/build:/usr/share/nginx/html/admin 
       - static_volume:/usr/share/nginx/html/static
     depends_on:
       - web
